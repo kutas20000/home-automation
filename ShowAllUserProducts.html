@@ -1,0 +1,22 @@
+<html>
+    <center>
+<table border="1" cellspacing="10" cellpadding="5">
+ <caption>Products</caption>  
+ <tr>
+ {% for row in result %}
+  
+  
+  <th>
+      <b><i>{{row.2}} [{{row.3}}]</i></b><br>
+      <img src=/static/{{row.6}} width='200' height='200'><br>
+       {{row.10}}<br>
+       <input type='submit' name='btn' value='ON'> <input type='submit' name='btn' value='OFF'>
+  </th>
+
+ 
+ {% endfor %}
+</tr>
+</table>    
+</center>
+
+</html>
